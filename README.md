@@ -13,14 +13,14 @@ dataset = [['itemC', 'itemB', 'itemE'],
 # new a Recommender object        
 rs = Recommender(dataset)
 
-# recommend user 0 5 items accroding to the most popular
+# recommend user_0 5 items accroding to the most popular
 popular = rs.popular(dataset[0], n=5)
 
-# recommend user 0 5 items accroding to the user-based CF
-user_based = rs.user_based(0)[:5]
+# recommend user_1 10 items accroding to the user-based CF
+user_based = rs.user_based(1)[:10]
 
-# recommend user 0 some items accroding to the item-based CF
-item_based = rs.item_based(0)
+# recommend user_2 some items accroding to the item-based CF
+item_based = rs.item_based(2)
 ```
 
 ## Parameter
